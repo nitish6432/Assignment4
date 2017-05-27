@@ -1,0 +1,39 @@
+/ super class
+
+public class C {
+	
+	
+	void test(){System.out.println("I'm from the top class");}
+	}
+  
+  
+  /sub class b
+  
+  class B extends C{
+		
+		
+		void test(){System.out.println("I'm from the B class");}
+    
+    /sub class a
+    
+    public class A extends B
+	{
+		
+		void work(){
+		
+		super.test();
+		}
+	
+	
+		
+		public static void main(String args[]){ 
+	       
+			A a = new A();
+			
+		   a.work();
+			
+		}}
+     
+     
+     Answer: f. It is not possible to invoke test() method defined in C from a method in A.
+    
